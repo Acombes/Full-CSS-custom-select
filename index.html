@@ -9,10 +9,11 @@
 <body>
 
 <div class="custom-select">
-    <select>
-        <option>foo</option>
-        <option>bar</option>
-        <option>I am a pretty long option</option>
+    <select required><!-- Required attribute is necessary if you need to have specific style on the placeholder -->
+        <option value="" selected disabled hidden>Select something</option>
+        <option value="foo">foo</option>
+        <option value="bar">bar</option>
+        <option value="long">I am a pretty long option</option>
     </select>
 </div>
 

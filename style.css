@@ -35,6 +35,10 @@
 }
 .custom-select select {
   padding: 7px 10px 7px 5px;
+  /* The following is specific style for the placeholder and works only if the select is required */
+}
+.custom-select select:required:invalid {
+  color: gray;
 }
 .custom-select:after {
   content: "";

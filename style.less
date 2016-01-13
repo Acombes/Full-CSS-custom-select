@@ -43,6 +43,11 @@
 
     select {
         padding: 7px @caretWidth 7px 5px;
+
+        /* The following is specific style for the placeholder and works only if the select is required */
+        &:required:invalid {
+            color: gray;
+        }
     }
 
     &:after {
